@@ -26,12 +26,18 @@ class MyApp extends StatelessWidget {
               const Text(
                 'Adicionando Imagem da internet',
               ),
-              Container(
-                width: 200,
-                height: 200,
+              SizedBox(
+                width: 150,
+                height: 100,
                 child: Image.network(
                     "https://docs.flutter.dev/assets/images/shared/brand/flutter/logo/flutter-lockup.png"),
               ),
+              const Text("Adicionando Imagem local"),
+              SizedBox(
+                width: 200,
+                height: 100,
+                child: Image.asset("assets/imagens/flutter.png"),
+              )
             ],
           ),
         ),
